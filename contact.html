@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — The Half Space</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="">
+
+<div id="site-header"></div>
+
+<main>
+  <section class="page-header">
+    <div class="container">
+      <span class="eyebrow">Contact</span>
+      <h1 class="fade-up">Write to us. <em>We will write back.</em></h1>
+      <p class="deck fade-up delay-1">Pitches, corrections, tip-offs, kind notes, unkind notes — all welcome. Please give us a few days.</p>
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <div class="container" style="display:contents">
+      <div class="container" style="display:grid; grid-template-columns:1fr 1fr; gap: 64px; padding: 80px var(--gutter); max-width: var(--max); margin:0 auto;">
+        <div class="contact-info">
+          <h2>The <em>direct</em> ways.</h2>
+          <p>If you know who you'd like to speak to, write to them directly. Otherwise the general inbox is read every day.</p>
+          <dl>
+            <div>
+              <dt>General</dt>
+              <dd>hello@thehalfspace.co</dd>
+            </div>
+            <div>
+              <dt>Pitches & submissions</dt>
+              <dd>pitches@thehalfspace.co</dd>
+            </div>
+            <div>
+              <dt>Corrections</dt>
+              <dd>corrections@thehalfspace.co</dd>
+            </div>
+            <div>
+              <dt>Press</dt>
+              <dd>press@thehalfspace.co</dd>
+            </div>
+            <div>
+              <dt>Postal</dt>
+              <dd>The Half Space<br>PO Box ——<br>London, United Kingdom</dd>
+            </div>
+          </dl>
+        </div>
+        <form class="contact-form" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Sent — thank you'; this.querySelector('button').disabled=true;">
+          <div>
+            <label>Your name</label>
+            <input type="text" placeholder="—" required>
+          </div>
+          <div>
+            <label>Email</label>
+            <input type="email" placeholder="—" required>
+          </div>
+          <div>
+            <label>About</label>
+            <select>
+              <option>A general note</option>
+              <option>A pitch</option>
+              <option>A correction</option>
+              <option>A subscription question</option>
+              <option>Press</option>
+            </select>
+          </div>
+          <div>
+            <label>Message</label>
+            <textarea placeholder="—" required></textarea>
+          </div>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+<script src="site.js"></script>
+</body>
+</html>
