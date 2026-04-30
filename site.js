@@ -17,9 +17,9 @@ const headerHTML = (active) => `
     </button>
     <nav class="primary">
       <a href="index.html" class="${active==='home'?'active':''}">Home</a>
-      <a href="tactics.html" class="${active==='tactics'?'active':''}">Tactics</a>
+      <a href="reports.html" class="${active==='reports'?'active':''}">Reports</a>
       <a href="features.html" class="${active==='features'?'active':''}">Features</a>
-      <a href="leagues.html" class="${active==='leagues'?'active':''}">Leagues</a>
+      <a href="comment.html" class="${active==='comment'?'active':''}">Comment</a>
       <a href="about.html" class="${active==='about'?'active':''}">About</a>
     </nav>
     <a href="index.html" class="brand">
@@ -42,9 +42,9 @@ const headerHTML = (active) => `
   <button class="close" onclick="document.getElementById('mobileMenu').classList.remove('open')" aria-label="Close menu">×</button>
   <nav>
     <a href="index.html">Home</a>
-    <a href="tactics.html">Tactics</a>
+    <a href="reports.html">Reports</a>
     <a href="features.html">Features</a>
-    <a href="leagues.html">Leagues</a>
+    <a href="comment.html">Comment</a>
     <a href="about.html">About</a>
     <a href="subscribe.html">Subscribe</a>
   </nav>
@@ -53,13 +53,13 @@ const headerHTML = (active) => `
   <button class="close" onclick="document.getElementById('searchOverlay').classList.remove('open')" aria-label="Close search">×</button>
   <div class="search-inner">
     <label class="search-eyebrow">Search The Half Space</label>
-    <input type="search" placeholder="Type a player, club, tactic, writer…" autofocus />
+    <input type="search" placeholder="Type a player, club, match, writer…" autofocus />
     <div class="search-suggest">
       <span>Try:</span>
-      <a href="#">false nine</a>
-      <a href="#">pressing traps</a>
-      <a href="#">Bundesliga</a>
+      <a href="#">match reports</a>
       <a href="#">long reads</a>
+      <a href="#">a midweek night</a>
+      <a href="#">essays</a>
     </div>
   </div>
 </div>
@@ -76,14 +76,14 @@ const footerHTML = `
           Half Space
         </span>
       </a>
-      <p>Football, written carefully. Tactics, culture, and the long view from the corridors between the lines.</p>
+      <p>A football paper. Match reports, comment, and the long view from the corridors between the lines.</p>
     </div>
     <div class="footer-col">
       <h4>Sections</h4>
       <ul>
-        <li><a href="tactics.html">Tactics</a></li>
+        <li><a href="reports.html">Reports</a></li>
         <li><a href="features.html">Features</a></li>
-        <li><a href="leagues.html">Leagues</a></li>
+        <li><a href="comment.html">Comment</a></li>
         <li><a href="article.html">Long reads</a></li>
       </ul>
     </div>
