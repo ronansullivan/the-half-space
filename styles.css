@@ -1421,7 +1421,7 @@ footer.site-footer {
    =========================== */
 
 .cover-hero {
-  padding: 80px 0 64px;
+  padding: 56px 0 48px;
   border-bottom: 1px solid var(--rule);
   position: relative;
   overflow: hidden;
@@ -1454,7 +1454,7 @@ footer.site-footer {
 .cover-stack {
   max-width: 1180px;
   margin: 0 auto;
-  padding: 48px var(--gutter) 0;
+  padding: 24px var(--gutter) 0;
   position: relative;
 }
 
@@ -1469,18 +1469,18 @@ footer.site-footer {
 }
 
 .cover-line.l1 {
-  font-size: clamp(56px, 11vw, 168px);
+  font-size: clamp(48px, 7.5vw, 112px);
   text-align: left;
 }
 .cover-line.l2 {
-  font-size: clamp(56px, 11vw, 168px);
+  font-size: clamp(48px, 7.5vw, 112px);
   text-align: center;
   font-style: normal;
   font-weight: 400;
   color: var(--accent);
 }
 .cover-line.l3 {
-  font-size: clamp(56px, 11vw, 168px);
+  font-size: clamp(48px, 7.5vw, 112px);
   text-align: right;
   font-style: italic;
   font-weight: 300;
@@ -1501,7 +1501,7 @@ footer.site-footer {
 .cover-rule {
   height: 1px;
   background: var(--ink);
-  margin: 56px 0 28px;
+  margin: 36px 0 24px;
   position: relative;
 }
 .cover-rule::before, .cover-rule::after {
