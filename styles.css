@@ -362,7 +362,7 @@ footer.site-footer {
   z-index: 2;
 }
 
-.card .meta {
+.card .meta, .latest-list .row .meta {
   font-family: var(--mono);
   font-size: 11px;
   letter-spacing: 0.08em;
@@ -373,7 +373,7 @@ footer.site-footer {
   gap: 12px;
   align-items: center;
 }
-.card .meta .dot-sep { width: 3px; height: 3px; background: var(--ink-muted); border-radius: 50%; display: inline-block; }
+.card .meta .dot-sep, .latest-list .row .meta .dot-sep { width: 3px; height: 3px; background: var(--ink-muted); border-radius: 50%; display: inline-block; flex-shrink: 0; }
 
 .card h3 {
   font-family: var(--serif);
