@@ -132,11 +132,12 @@
     padding:0.25rem 0.9rem;
   }
   .scorers{
-    text-align:center;
+    display:flex;
     font-size:0.9rem;
     color:#cdd6ea;
     margin:0 0 1rem;
   }
+  .scorers .team-scorers{flex:1; text-align:center;}
   .matchgrid{
     display:grid;
     grid-template-columns:1fr 1fr;
@@ -189,7 +190,7 @@
     <span class="score">1&ndash;0</span>
     <span class="team">Everton</span>
   </div>
-  <p class="scorers">Palhinha 41'</p>
+  <p class="scorers"><span class="team-scorers">Palhinha 41'</span><span class="team-scorers">&nbsp;</span></p>
   <div class="matchgrid">
     <div>
       <h3>Tottenham Hotspur</h3>
