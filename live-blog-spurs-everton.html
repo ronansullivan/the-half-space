@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Live blog: Spurs vs Everton 24/5</title>
+<style>
+  :root{
+    --navy:#0b1f3a;
+    --spurs-blue:#132257;
+    --cream:#f7f5f0;
+    --ink:#1a1a1a;
+    --accent:#8b1d2c; /* claret/relegation-red accent */
+    --line:#d8d4cc;
+    --gold:#c9a227;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    font-family:'Georgia','Times New Roman',serif;
+    background:var(--cream);
+    color:var(--ink);
+    line-height:1.6;
+  }
+  header{
+    background:var(--spurs-blue);
+    color:#fff;
+    padding:2.5rem 1.5rem 2rem;
+    border-bottom:6px solid var(--gold);
+  }
+  .eyebrow{
+    font-family:Helvetica,Arial,sans-serif;
+    text-transform:uppercase;
+    letter-spacing:0.18em;
+    font-size:0.75rem;
+    color:var(--gold);
+    margin:0 0 0.6rem;
+  }
+  h1{
+    margin:0;
+    font-size:2.1rem;
+    font-weight:700;
+    max-width:46rem;
+  }
+  .subhead{
+    margin:0.7rem 0 0;
+    font-family:Helvetica,Arial,sans-serif;
+    font-size:1rem;
+    color:#cdd6ea;
+    max-width:42rem;
+  }
+  main{
+    max-width:44rem;
+    margin:0 auto;
+    padding:2rem 1.25rem 4rem;
+  }
+  .entry{
+    border-bottom:1px solid var(--line);
+    padding:1.6rem 0;
+  }
+  .entry:first-of-type{
+    padding-top:0;
+  }
+  .entry-time{
+    font-family:Helvetica,Arial,sans-serif;
+    font-weight:700;
+    font-size:0.8rem;
+    color:var(--accent);
+    letter-spacing:0.05em;
+    text-transform:uppercase;
+    margin-bottom:0.25rem;
+  }
+  .entry h2{
+    font-size:1.25rem;
+    margin:0 0 0.5rem;
+    color:var(--navy);
+  }
+  .entry p{
+    margin:0.6rem 0;
+    font-size:1.02rem;
+  }
+  .entry.goal{
+    background:#fff;
+    border-left:5px solid var(--gold);
+    padding-left:1rem;
+    margin-left:-1rem;
+  }
+  .embed-wrap{
+    margin:1rem 0;
+    display:flex;
+    justify-content:center;
+  }
+  .embed-wrap blockquote.twitter-tweet{
+    margin:0 auto !important;
+  }
+  footer{
+    text-align:center;
+    font-family:Helvetica,Arial,sans-serif;
+    font-size:0.8rem;
+    color:#777;
+    padding:2rem 1rem 3rem;
+  }
+.scorebox{
+    background:var(--navy);
+    color:#fff;
+    margin:0 auto;
+    max-width:44rem;
+    border-radius:6px;
+    padding:1.5rem 1.75rem;
+    margin-top:-1.5rem;
+    margin-bottom:1.5rem;
+    position:relative;
+    z-index:2;
+    box-shadow:0 6px 18px rgba(0,0,0,0.25);
+    font-family:Helvetica,Arial,sans-serif;
+  }
+  .scoreline{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:1.5rem;
+    font-family:Georgia,serif;
+    font-weight:700;
+    font-size:1.8rem;
+    margin:0 0 0.75rem;
+  }
+  .scoreline .team{flex:1; text-align:center;}
+  .scoreline .score{
+    background:var(--gold);
+    color:var(--navy);
+    border-radius:4px;
+    padding:0.25rem 0.9rem;
+  }
+  .scorers{
+    text-align:center;
+    font-size:0.9rem;
+    color:#cdd6ea;
+    margin:0 0 1rem;
+  }
+  .matchgrid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:1rem 2rem;
+    font-size:0.85rem;
+    border-top:1px solid rgba(255,255,255,0.15);
+    padding-top:1rem;
+  }
+  .matchgrid h3{
+    font-size:0.75rem;
+    text-transform:uppercase;
+    letter-spacing:0.1em;
+    color:var(--gold);
+    margin:0 0 0.4rem;
+  }
+  .matchgrid p{
+    margin:0.15rem 0;
+    color:#dde3f0;
+    line-height:1.5;
+  }
+  .matchmeta{
+    grid-column:1 / -1;
+    display:flex;
+    flex-wrap:wrap;
+    gap:1.5rem;
+    font-size:0.85rem;
+    color:#cdd6ea;
+    border-top:1px solid rgba(255,255,255,0.15);
+    padding-top:0.75rem;
+    margin-top:0.25rem;
+  }
+  @media (max-width:600px){
+    h1{font-size:1.6rem;}
+    .matchgrid{grid-template-columns:1fr;}
+    .scoreline{font-size:1.3rem; gap:0.75rem;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <p class="eyebrow">Premier League · Final day</p>
+  <h1>Live blog: Spurs vs Everton, 24/5</h1>
+  <p class="subhead">Tottenham require a draw at home to Everton to send West Ham United down to the Championship on the final day of the season.</p>
+</header>
+
+<div class="scorebox">
+  <div class="scoreline">
+    <span class="team">Tottenham Hotspur</span>
+    <span class="score">1&ndash;0</span>
+    <span class="team">Everton</span>
+  </div>
+  <p class="scorers">Palhinha 41'</p>
+  <div class="matchgrid">
+    <div>
+      <h3>Tottenham Hotspur</h3>
+      <p>Kinsky; Porro, Danso, Van de Ven, Udogie; Bentancur, Palhinha; Spence, Gallagher, Tel; Richarlison</p>
+      <p>Subs: Kolo Muani, Sarr, Maddison, Gray, Dragusin</p>
+    </div>
+    <div>
+      <h3>Everton</h3>
+      <p>Pickford; O'Brien, Tarkowski, Keane, Mykolenko; Garner, Iroegbunam; Röhl, Ndiaye, Dewsbury-Hall; Barry</p>
+      <p>Subs: George, Armstrong, Beto, Alcaraz, Coleman</p>
+    </div>
+    <div class="matchmeta">
+      <span>Venue: Tottenham Hotspur Stadium</span>
+      <span>Attendance: c. 60,000</span>
+      <span>Referee: Michael Oliver</span>
+    </div>
+  </div>
+</div>
+
+<main>
+
+<div class="entry">
+  <div class="entry-time">2:45pm</div>
+  <h2>Welcome!</h2>
+  <p>Hi, and welcome to our live blog for today's final gameweek of this Premier League season.</p>
+  <p>We're going to be following Spurs against Everton at the Tottenham Hotspur Stadium, as they require a draw to avoid relegation and send West Ham down, who themselves are facing Leeds at the London Stadium.</p>
+  <p>Spurs are currently 17th and on 38 points, while West Ham are 18th on 36 points. If Spurs lose and West Ham win, Spurs will go down. All other combinations of results will see the north London side stay up, in what has been such a poor season from them.</p>
+  <p>Kick-off is in an hour and 15 minutes.</p>
+</div>
+
+<div class="entry">
+  <div class="entry-time">3:00pm</div>
+  <h2>Line-ups announced</h2>
+  <p>The line-ups have been announced. Here's how Spurs look today, with manager Roberto de Zerbi making just one change from Tuesday night's loss at Stamford Bridge, with Djed Spence replacing Randal Kolo Muani on the right wing:</p>
+  <p>Kinsky; Porro, Danso, Van de Ven, Udogie; Bentancur, Palhinha; Spence, Gallagher, Tel; Richarlison</p>
+  <p>Here's how Everton line up, with David Moyes making just the one change from their 3-1 home defeat to Sunderland last time out, swapping in Thierno Barry for Beto up front.</p>
+  <p>Pickford; O'Brien, Tarkowski, Keane, Mykolenko; Garner, Iroegbunam; Röhl, Ndiaye, Dewsbury-Hall; Barry</p>
+</div>
+
+<div class="entry">
+  <div class="entry-time">3:05pm</div>
+  <h2>West Ham vs Leeds: line-ups</h2>
+  <p>Spurs fans will have their eyes on that West Ham game, so here's the line-ups for their match against Leeds.</p>
+  <p><strong>West Ham:</strong><br>
+  Hermansen; Walker-Peters, Mavropanos, Disasi, Diouf; Soucek, Fernandes; Bowen, Pablo, Summerville; Castellanos</p>
+  <p><strong>Leeds:</strong><br>
+  Darlow; Rodon, Bijol, Struijk; Bogle, Aaronson, Ampadu, Tanaka, Justin; Calvert-Lewin, Nmecha</p>
+</div>
+
+<div class="entry">
+  <div class="entry-time">3:15pm</div>
+  <h2>How could Spurs go down?</h2>
+  <p>There is only one way Spurs go down today instead of West Ham: that's by losing against Everton and West Ham beating Leeds.</p>
+  <p>Any other permutation, including a draw for Spurs, or a loss for Spurs but West Ham failing to win, will see the Hammers go down and the Lilywhites finish 17th for the second year in a row.</p>
+</div>
+
+<div class="entry">
+  <div class="entry-time">3:20pm</div>
+  <h2>Warm-ups</h2>
+  <p>There's a surprisingly buoyant atmosphere at the Tottenham Hotspur Stadium today, with much of the ground full of fans in white. They're up for it today &mdash; let's hope the players are too, as they emerge from the tunnel to complete their final drills.</p>
+</div>
+
+<div class="embed-wrap">
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">The Spurs fans line the streets to welcome the players ahead of their fight for survival against Everton ⚪️ <a href="https://t.co/vp3pEx6k6Q">pic.twitter.com/vp3pEx6k6Q</a></p>&mdash; Sky Sports Premier League (@SkySportsPL) <a href="https://x.com/SkySportsPL/status/2058538721381695672?ref_src=twsrc%5Etfw">May 24, 2026</a></blockquote>
+</div>
+
+<div class="entry">
+  <div class="entry-time">3:30pm</div>
+  <h2>How did Spurs get here?</h2>
+  <p>A lot of terrible decisions&hellip;</p>
+</div>
+
+<div class="entry">
+  <div class="entry-time">3:31pm</div>
+  <h2>Frank-ly awful</h2>
+  <p>Spurs have been &mdash; to put it mildly &mdash; terrible this season.</p>
+  <p>In firing Ange Postecoglou 16 days after their Europa League triumph over Manchester United in Bilbao, Spurs hired Brentford manager Thomas Frank, who had guided the West London side to their joint-best league finish of ninth.</p>
+  <p>Frank was seen as a steadier hand than the high-wire act of Postecoglou, who was often criticised for prioritising attacking football over defensive solidity.</p>
+  <p>However, despite a positive start &mdash; coming within seconds of winning the European Super Cup against PSG in his first game, followed by a clinical win away at Manchester City &mdash; the wheels started to fall off.</p>
+  <p>Fans turned on the Dane as Spurs' attack faltered, with record-low xG totals against Chelsea (0.05) and Arsenal (0.07) in November &mdash; and he could never really win them back.</p>
+  <p>Results never recovered, with a 2-0 home win against Brentford in December the last time Spurs would win at home under Frank, who was eventually sacked in February after a run of two wins in 17 games.</p>
+</div>
+
+<div class="entry">
+  <div class="entry-time">3:32pm</div>
+  <h2>Tudor is to do?</h2>
+  <p>Sporting directors Vinai Venkatesham and Johan Lange turned to former Croatia international and Juventus manager Igor Tudor to bail them out of trouble.</p>
+  <p>With experience of being parachuted into Italian clubs late in the season, Venkatesham and Lange took former consultant Fabio Paratici's recommendation and hired the gruff Croat.</p>
+  <p>It didn't work out.</p>
+  <p>Tudor was fired after just 44 days in charge, his last game being a crucial match against relegation rivals Nottingham Forest at the Tottenham Hotspur Stadium. Spurs fans lined the streets ahead of kick-off, cheering on the team coach as they arrived. There was hope in the air.</p>
+  <p>Spurs lost 3-0.</p>
+  <p>Tudor was informed of his father's passing immediately after the game, so did not fulfil his media duties, with Spurs confirming his exit a week after the game, bringing in&hellip;</p>
+</div>
+
+<div class="entry">
+  <div class="entry-time">3:33pm</div>
+  <h2>Save us, Roberto! Save us!</h2>
+  <p>After leaving Marseille on the same day Frank was sacked by Spurs, many were surprised when the Lilywhites announced the Italian had joined on a five-year contract, who seemed to have turned down Spurs in the wake of Frank's departure.</p>
+  <p>De Zerbi's first game against Sunderland away resulted in a tight 1-0 loss, but there were signs of improvement from Frank and Tudor's ill-fated reigns.</p>
+  <p>What followed was a heart-breaking 2-2 home draw with Brighton, where Spurs conceded a 96th-minute equaliser. Many assumed Spurs were doomed from that point, with West Ham's results having put them into the relegation zone the week prior.</p>
+  <p>Spurs faced Wolves away next, having to secure a win &mdash; and they did! But with West Ham securing a late win over Everton they were still 18th.</p>
+  <p>The tide turned however, when West Ham were walloped by Brentford 3-0, and Spurs put on a masterclass at Aston Villa, winning 2-1 and moving into 17th.</p>
+  <p>Now, after Spurs drew with Leeds and lost to Chelsea, and West Ham lost to Arsenal and Newcastle, the relegation scrap has come down to the final day.</p>
+  <p>Can de Zerbi do what many thought impossible after Tudor's last game? Can he keep Spurs up?</p>
+  <p>We'll find out in just under half an hour at the Tottenham Hotspur Stadium, as the home side take on Everton in this huge game.</p>
+</div>
+
+<div class="entry">
+  <div class="entry-time">3:40pm</div>
+  <h2>Warm-ups over!</h2>
+  <p>The players are heading back down the tunnel, as the atmosphere inside the stadium continues to build.</p>
+  <p>I wouldn't like to be a Spurs fan today.</p>
+</div>
+
+<div class="entry">
+  <div class="entry-time">3:48pm</div>
+  <h2>Positive atmosphere</h2>
+  <p>The stadium announcer reads out the Spurs line-up, with every single player receiving huge cheers &mdash; and every Everton player receiving massive boos. As it should be.</p>
+</div>
+
+<div class="entry">
+  <div class="entry-time">3:55pm</div>
+  <h2>Here they come!</h2>
+  <p>Out the teams come, with 'Duel of the Fates' from Star Wars: The Phantom Menace blaring over the tannoy as has been tradition at Spurs for a while now.</p>
+  <p>In that scene Obi-Wan Kenobi manages to beat Darth Maul in an epic battle, sending his nemesis falling desperately down an endless chute &mdash; could Spurs do the same to West Ham today and send them tumbling back down to the Championship for the first time in 15 years?</p>
+</div>
+
+<div class="entry">
+  <div class="entry-time">3:57pm</div>
+  <h2>Handshakes all round</h2>
+  <p>The teams shake hands, with Spurs in their lily-white home kit and Everton in their classic blue.</p>
+  <p>The Spurs team huddle near the edge of the area as the Spurs fans chant, "Come on you Spurs".</p>
+  <p>Can Spurs avoid a first relegation in nearly 50 years? The 60,000 or so fans in here will hope so.</p>
+</div>
+
+<div class="entry">
+  <div class="entry-time">4:00pm</div>
+  <h2>Kick-off!</h2>
+  <p>The referee today, Michael Oliver, blows his whistle as Everton kick us off, attacking from left to right.</p>
+</div>
+
+<div class="entry">
+  <div class="entry-time">4:01pm</div>
+  <h2>Corner to Everton</h2>
+  <p>A corner to Everton as Ndiaye tries to get past Udogie, but the ball comes off him at the by-line.</p>
+  <p>It comes to nothing, as Spurs eventually clear.</p>
+</div>
+
+<div class="entry">
+  <div class="entry-time">4:02pm</div>
+  <h2>Corner to Spurs</h2>
+  <p>Spurs make their first proper foray into Everton territory, with Destiny Udogie's lung-busting run finding Conor Gallagher, who is tackled, but the ball falls to Rodrigo Bentancur, who is fouled. Spurs have a free kick about 30 yards out, to the left of the area.</p>
+  <p>Porro's delivery is headed out by James Tarkowski for Spurs' first corner of the game. Tel takes, but Everton eventually clear.</p>
+</div>
+
+<div class="entry">
+  <div class="entry-time">4:05pm</div>
+  <h2>A bright start from Spurs</h2>
+  <p>It's all Spurs in these opening minutes, penning Everton back into their area.</p>
+</div>
+
+<div class="entry">
+  <div class="entry-time">4:06pm</div>
+  <h2>Chance!</h2>
+  <p>Kevin Danso's long-throw eventually falls to Gallagher in the area, but his swivel and shot hits the side-netting.</p>
+  <p>De Zerbi jumps in frustration on the touchline.</p>
+</div>
+
+<div class="entry">
+  <div class="entry-time">4:07pm</div>
+  <h2>West Ham vs Leeds</h2>
+  <p>Still 0-0 at the London Stadium, so, as things stand, Spurs are staying up (I'm sure they'd like a goal or two though).</p>
+</div>
+
+<div class="entry">
+  <div class="entry-time">4:10pm</div>
+  <h2>Jaw-ful injury</h2>
+  <p>Djed Spence is indeed playing at right wing, and also has a black mask on his face, after a challenge from Liam Delap at Chelsea on Tuesday resulted in a broken jaw.</p>
+  <p>Luckily, it hasn't ruled him out of the England squad, which he was named in on Friday.</p>
+</div>
+
+<div class="entry">
+  <div class="entry-time">4:11pm</div>
+  <h2>Rom-where-o?</h2>
+  <p>The cameras focus on Spurs captain Cristian Romero, who has been at the centre of some controversy this week, after flying home to Argentina to apparently recover from injury.</p>
+  <p>But Spurs fans were not happy the Argentine would not be in north London for such a vital clash.</p>
+  <p>He must have been told to come back sharpish, I think.</p>
+</div>
+
+<div class="entry">
+  <div class="entry-time">4:13pm</div>
+  <h2>Chance!</h2>
+  <p>João Palhinha skies over the bar from close range: Spurs can't keep missing chances like that.</p>
+  <p>The crowd respond with chants of "When the Spurs Go Marching In".</p>
+</div>
+
+<div class="entry">
+  <div class="entry-time">4:14pm</div>
+  <h2>Handbags</h2>
+  <p>Guglielmo Vicario and Seamus Coleman are having words on the bench &mdash; about what I'm not too sure.</p>
+</div>
+
+<div class="entry">
+  <div class="entry-time">4:17pm</div>
+  <h2>Tel him again</h2>
+  <p>Mathys Tel has got the Everton right-back Jake O'Brien on toast here, pulling him this way and that, drawing a foul from the Irishman.</p>
+  <p>The defender has got his work cut out here.</p>
+</div>
+
+<div class="entry">
+  <div class="entry-time">4:20pm</div>
+  <h2>Foul!</h2>
+  <p>A nasty one from Merlin Röhl, whose follow-through catches Micky Van de Ven high up on his shin.</p>
+  <p>Red card? No! The free kick goes in Everton's favour! All square as the clock ticks past the 20-minute mark.</p>
+</div>
+
+<div class="entry">
+  <div class="entry-time">4:23pm</div>
+  <h2>Half-chance!</h2>
+  <p>Spence streams down the right wing after being found by Porro, and the England man's cross is parried away by Pickford, preventing Richarlison tapping in at the back post.</p>
+</div>
+
+<div class="entry">
+  <div class="entry-time">4:24pm</div>
+  <h2>Drinks break</h2>
+  <p>With the temperatures in north London over 30 degrees, the teams both go to the sidelines for a drinks break.</p>
+  <p>A chance for both Roberto de Zerbi and David Moyes to tinker with their team &mdash; if they want to.</p>
+</div>
+
+<div class="entry">
+  <div class="entry-time">4:28pm</div>
+  <h2>Maddison makes an appearance</h2>
+  <p>James Maddison, in an orange bib and his lovely long hair, jogs up and down the touchline, applauding the Spurs fans and vice versa.</p>
+  <p>Still 0-0 after nearly half an hour, as is the West Ham game, who are still &mdash; as it stands &mdash; going down.</p>
+</div>
+
+<div class="entry">
+  <div class="entry-time">4:30pm</div>
+  <h2>169 days&hellip;and counting?</h2>
+  <p>The Sky Sports commentator reminds the audience that Spurs' last win at home was 169 days ago. Incredible.</p>
+  <p>That was back in December: a 2-0 win under Thomas Frank against his former side Brentford. Xavi Simons and Richarlison scored the goals that day.</p>
+  <p>Will that run end today?</p>
+</div>
+
+<div class="entry">
+  <div class="entry-time">4:32pm</div>
+  <h2>Stayin' Ndiaye</h2>
+  <p>Iliman Ndiaye is Everton's danger man here: the Senegal forward dribbles past three, before his shot is deflected behind for a corner which comes to nothing.</p>
+</div>
+
+<div class="entry">
+  <div class="entry-time">4:35pm</div>
+  <h2>Chance!</h2>
+  <p>Danso has a free header from Porro's corner, but his effort is deflected off an Everton player into the grateful Pickford's arms.</p>
+  <p>The Spurs crowd are alternating between encouraging chants and groans of frustration.</p>
+  <p>They'd love a goal here. Soon.</p>
+</div>
+
+<div class="entry">
+  <div class="entry-time">4:38pm</div>
+  <h2>Risky business</h2>
+  <p>Everton break forward with Ndiaye, as the ball deflects upwards inside the area &mdash; but Van de Ven heads it towards his own goal, with Thierno Barry nearly nipping in.</p>
+  <p>Huge moans of angst from the crowd as Spurs clear upfield, but they're still safe with West Ham currently drawing with Leeds.</p>
+</div>
+
+<div class="entry">
+  <div class="entry-time">4:40pm</div>
+  <h2>The pressure continues</h2>
+  <p>Spurs have had lots of set-pieces in and around the Everton box, but have yet to make one count.</p>
+  <p>Porro stands over another free kick&hellip;</p>
+  <p>It, again, comes to nothing, but the ball is eventually recycled, with Richarlison winning a corner. What about this one? Tel is about to deliver&hellip;</p>
+</div>
+
+<div class="entry goal">
+  <div class="entry-time">4:42pm</div>
+  <h2>GOAL!!!</h2>
+  <p>Bedlam at the Tottenham Hotspur Stadium as Palhinha scores! 1-0 to Spurs!</p>
+  <p>Tel's delivery finds the Portuguese midfielder, whose header cannons back off the post, but the ball rebounds to him, and he passes it just over the line, despite the best efforts of an Everton defender!</p>
+  <p>Michael Oliver points to his watch to confirm the goal! The players run to the side in a huge huddle and the crowd goes wild! As does de Zerbi!</p>
+  <p>Spurs feel like they are definitely staying up now!</p>
+</div>
+
+<div class="embed-wrap">
+<blockquote class="twitter-tweet"><p lang="pt" dir="ltr">A HUGE MOMENT for Joao Palhinha and Spurs!! <a href="https://t.co/uKnyazdzxt">pic.twitter.com/uKnyazdzxt</a></p>&mdash; Sky Sports Premier League (@SkySportsPL) <a href="https://x.com/SkySportsPL/status/2058575538919297276?ref_src=twsrc%5Etfw">May 24, 2026</a></blockquote>
+</div>
+
+<div class="entry">
+  <div class="entry-time">4:44pm</div>
+  <h2>Jubilation</h2>
+  <p>The crowd are in full voice here. The groans have given way to a buoyant mood once again. Another Premier League season is so close now, and a generational embarrassment potentially avoided.</p>
+  <p>Back in April after that 3-0 home loss to Nottingham Forest I don't think many people fancied Spurs to stay up.</p>
+  <p>What a job de Zerbi has done.</p>
+</div>
+
+<div class="entry">
+  <div class="entry-time">4:45pm</div>
+  <p>Four minutes of injury time in the first half.</p>
+</div>
+
+<div class="entry">
+  <div class="entry-time">4:47pm</div>
+  <h2>Vicario's joy</h2>
+  <p>Spurs 'keeper Vicario was practically choking his manager as replays of those celebrations show.</p>
+  <p>Be careful, Guglielmo!</p>
+</div>
+
+<div class="entry">
+  <div class="entry-time">4:50pm</div>
+  <h2>Half-time</h2>
+  <p>The referee blows for half-time. Just another forty-five or so minutes and Spurs will be safe at West Ham's expense.</p>
+  <p>Can they build on this lead in the second half and save their fans some stress and anxiety?</p>
+</div>
+
+<div class="entry">
+  <div class="entry-time">4:55pm</div>
+  <h2>Easing fears</h2>
+  <p>With that goal, João Palhinha has scored vital goals in a couple of matches, including his late winner against Wolves to give Spurs their first win of 2026.</p>
+  <p>It's now looking like the Portuguese midfielder is going to secure another 3 points for his side &mdash; alongside Premier League safety.</p>
+  <p>Surely they have to sign him permanently in the summer?</p>
+</div>
+
+<div class="entry">
+  <div class="entry-time">5:07pm</div>
+  <h2>Technical issues</h2>
+  <p>We should have kicked off for the second half by now but the assistant referee is having some technical issues.</p>
+  <p>The West Ham game is now into its 50th minute. That could cause some tension at the end of these matches.</p>
+</div>
+
+<div class="entry">
+  <div class="entry-time">5:12pm</div>
+  <h2>Second half</h2>
+  <p>Finally, after quite a lengthy delay, the game restarts. Can Spurs hold on or add to their lead?</p>
+  <p>Or will David Moyes' side offer more than they did in that first half?</p>
+  <p>Neither side has made any substitutions.</p>
+</div>
+
+<div class="entry">
+  <div class="entry-time">5:14pm</div>
+  <h2>Pickford spills</h2>
+  <p>Jordan Pickford looks sheepish in the Everton goal as a Djed Spence effort from outside the area nearly falls through the England man's legs, trickling behind for a corner.</p>
+  <p>Better to get that out the way now than do it at the World Cup.</p>
+</div>
+
+<div class="entry">
+  <div class="entry-time">5:17pm</div>
+  <h2>On the beach?</h2>
+  <p>Everton offered little in the first half, and have started the second in a similar vein.</p>
+  <p>West Ham will not thank them for it, but with little to play for, Everton seem to be already on the beach.</p>
+  <p>With such temperatures in London at the moment, why would they want to be?</p>
+</div>
+
+<div class="entry">
+  <div class="entry-time">5:20pm</div>
+  <h2>Unhappy hunting ground</h2>
+  <p>West Ham fans: look away from this stat.</p>
+  <p>Everton have won just once in their last 16 games away at Spurs, with that sole victory coming in 2020 under Carlo Ancelotti thanks to a solitary Dominic Calvert-Lewin goal.</p>
+  <p>Who knows how today will go though &mdash; right, Hammers?</p>
+</div>
+
+<div class="entry">
+  <div class="entry-time">5:24pm</div>
+  <h2>Animation department</h2>
+  <p>Every time the cameras pan to the Spurs dugout, Vicario is almost as animated as de Zerbi on the touchline, the 'keeper barking and gesticulating at every kick of the ball.</p>
+  <p>I wonder: does de Zerbi mind?</p>
+</div>
+
+<div class="entry">
+  <div class="entry-time">5:27pm</div>
+  <h2>Toothless, not ruthless</h2>
+  <p>Spurs' frontline has just lacked that clinical edge to capitalise on the dominance the team has shown today.</p>
+  <p>Spence breaks forward into the box, with the ball sitting up for Tel, whose strike is blocked.</p>
+  <p>Richarlison, Mathys Tel, and Djed Spence are not necessarily names to strike fear into defenders' hearts.</p>
+</div>
+
+<div class="entry">
+  <div class="entry-time">5:29pm</div>
+  <h2>Everton substitutions</h2>
+  <p>Merlin Röhl and Jake O'Brien are taken off, being replaced by Chelsea loanee Tyrique George and English youngster Harrison Armstrong.</p>
+</div>
+
+<div class="entry">
+  <div class="entry-time">5:30pm</div>
+  <h2>West Ham goal!</h2>
+  <p>Now there's something for West Ham to cheer! Taty Castellanos has scored to put the Hammers up against Leeds.</p>
+  <p>Suddenly the Tottenham Hotspur Stadium feels a little more tense&hellip;</p>
+  <p>2 goals for Everton and Spurs will be down.</p>
+</div>
+
+<div class="entry">
+  <div class="entry-time">5:33pm</div>
+  <h2>Squeaky bum time</h2>
+  <p>A lot of Spurs fans now checking their phones or biting nails, alongside groaning every time Everton are on the ball.</p>
+  <p>Pape Matar Sarr is about to come on.</p>
+</div>
+
+<div class="entry">
+  <div class="entry-time">5:37pm</div>
+  <h2>Tel flattering to deceive</h2>
+  <p>He has a great work rate and attitude, but Mathys Tel, 20, just lacks that bit of quality.</p>
+  <p>He dribbles forward here, with Spence in a great position on his right, but refuses to pass and is easily tackled.</p>
+</div>
+
+<div class="entry">
+  <div class="entry-time">5:38pm</div>
+  <h2>Drinks break</h2>
+  <p>Randal Kolo Muani and Pape Matar Sarr have to wait for this drinks break until they can come on.</p>
+  <p>De Zerbi will just be telling his players to calm down and keep playing their way.</p>
+</div>
+
+<div class="entry">
+  <div class="entry-time">5:40pm</div>
+  <h2>Spurs substitution</h2>
+  <p>Mathys Tel and Richarlison are replaced by Kolo Muani and Sarr.</p>
+  <p>17 minutes plus injury time to go.</p>
+</div>
+
+<div class="entry">
+  <div class="entry-time">5:41pm</div>
+  <h2>Keep calm and carry on</h2>
+  <p>Still so many faces wrought with tension in the home crowd here.</p>
+  <p>Do they really think this Everton side will score twice without reply? In the next 15 minutes?</p>
+  <p>I guess stranger things have happened&hellip;</p>
+</div>
+
+<div class="entry">
+  <div class="entry-time">5:43pm</div>
+  <h2>Look away Spurs fans</h2>
+  <p>It's not an Everton goal &mdash; but West Ham have doubled their lead against Leeds.</p>
+  <p>Jarrod Bowen &mdash; who would have been disappointed to miss out on Thomas Tuchel's England squad for the World Cup &mdash; slams in at the near post.</p>
+  <p>Wry smiles on Spurs fans' faces now &mdash; not helped by Kolo Muani shooting well over from 30 yards out.</p>
+  <p>Just the one Premier League goal for the PSG loanee this season.</p>
+</div>
+
+<div class="entry">
+  <div class="entry-time">5:46pm</div>
+  <h2>A wild Maddison appears</h2>
+  <p>After so long out injured, it's still a strange sight to see James Maddison about to come on for Spurs.</p>
+  <p>A ripple of applause rings out as they see him pull off his bib and make his way to the sideline, alongside Archie Gray.</p>
+</div>
+
+<div class="entry">
+  <div class="entry-time">5:47pm</div>
+  <h2>10s across the board</h2>
+  <p>Pape Matar Sarr breaks into the penalty area, before being tripped&hellip;</p>
+  <p>No: it's a dive from the Senegalese man, and is duly given a yellow by Michael Oliver.</p>
+</div>
+
+<div class="entry">
+  <div class="entry-time">5:47pm</div>
+  <h2>Spurs substitution</h2>
+  <p>De Zerbi does make those changes as Maddison and Gray come on for Rodrigo Bentancur and Conor Gallagher.</p>
+</div>
+
+<div class="entry">
+  <div class="entry-time">5:50pm</div>
+  <h2>Everton substitution</h2>
+  <p>A straight swap: Thierno Barry comes off for Beto, Dewsbury-Hall is replaced by Charly Alcaraz, and departing captain Seamus Coleman, making his final appearance for the club, replaces Iroegbunam.</p>
+</div>
+
+<div class="entry">
+  <div class="entry-time">5:52pm</div>
+  <h2>So close, yet so far</h2>
+  <p>About five minutes of normal time left. Can Spurs do it?</p>
+</div>
+
+<div class="entry">
+  <div class="entry-time">5:53pm</div>
+  <h2>Close!</h2>
+  <p>Everton nearly score! Tyrique George nips in ahead of Kinsky to square, but Van de Ven clears!</p>
+  <p>Could Everton do the unthinkable and sink Spurs?</p>
+</div>
+
+<div class="entry">
+  <div class="entry-time">5:54pm</div>
+  <h2>Best 'til last</h2>
+  <p>Everton corner here, as they finally put the pressure on Spurs.</p>
+  <p>Danso heads it away, but Everton recycle and cross it in again.</p>
+  <p>Van de Ven now heads it away, as play is paused so Kevin Danso can receive treatment (or time-waste).</p>
+</div>
+
+<div class="entry">
+  <div class="entry-time">5:56pm</div>
+  <h2>Under pressure</h2>
+  <p>Lots of hand-wringing and red faces &mdash; either from the heat or stress &mdash; but Spurs are nearly there.</p>
+  <p>In the last minute of normal time, now.</p>
+</div>
+
+<div class="entry">
+  <div class="entry-time">5:57pm</div>
+  <h2>Spurs substitution</h2>
+  <p>Radu Dragusin is on for Destiny Udogie &mdash; de Zerbi taking no chances.</p>
+  <p>West Ham's game beat Leeds 3-0 after Callum Wilson's late goal.</p>
+</div>
+
+<div class="embed-wrap">
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">The full-time whistle goes at the London Stadium as West Ham await their fate...🫣 <a href="https://t.co/pdRS0E2wnt">pic.twitter.com/pdRS0E2wnt</a></p>&mdash; Sky Sports Premier League (@SkySportsPL) <a href="https://x.com/SkySportsPL/status/2058593725006160168?ref_src=twsrc%5Etfw">May 24, 2026</a></blockquote>
+</div>
+
+<div class="entry">
+  <div class="entry-time">5:59pm</div>
+  <h2>Nine minutes of injury time</h2>
+  <p>Groans and consternation in N17 as the referee adds almost 10 minutes of injury time here.</p>
+  <p>Some of the fans can't believe it.</p>
+</div>
+
+<div class="entry">
+  <div class="entry-time">6:01pm</div>
+  <h2>Get up, Sarr!</h2>
+  <p>Fans won't be happy to see Pape Matar Sarr go down to receive treatment.</p>
+  <p>This match will go over the 100-minute mark now.</p>
+</div>
+
+<div class="entry">
+  <div class="entry-time">6:02pm</div>
+  <h2>Keane header</h2>
+  <p>Michael Keane is up and loops a header just over the bar, but Antonin Kinsky didn't get a touch.</p>
+</div>
+
+<div class="entry">
+  <div class="entry-time">6:04pm</div>
+  <h2>Poor from Porro</h2>
+  <p>Pedro Porro goes down clutching his head after a challenge, but the referee ignores his protestation.</p>
+  <p>So, Porro rises from the ground immediately to win back the ball.</p>
+  <p>A quick recovery.</p>
+</div>
+
+<div class="entry">
+  <div class="entry-time">6:05pm</div>
+  <h2>Chance!</h2>
+  <p>Alcaraz should do better! Another header from Everton that just misses the target!</p>
+  <p>De Zerbi gestures to the crowd to up the atmosphere! It is getting more and more tense by the second here, but time is running out for those Everton goals.</p>
+  <p>There'll be at least another five minutes to play here.</p>
+</div>
+
+<div class="entry">
+  <div class="entry-time">6:07pm</div>
+  <h2>Save!</h2>
+  <p>Antonin Kinsky: what a save!</p>
+  <p>Tyrique George cuts in from the right to curl one into the top corner, but a huge hand from Kinsky prevents him.</p>
+  <p>What a redemption arc this young man has had since that horrible night in Madrid!</p>
+</div>
+
+<div class="embed-wrap">
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">What a SAVE from Kinsky!! 🤯 <a href="https://t.co/n8AE5mFZIE">pic.twitter.com/n8AE5mFZIE</a></p>&mdash; Sky Sports Premier League (@SkySportsPL) <a href="https://x.com/SkySportsPL/status/2058595539956953595?ref_src=twsrc%5Etfw">May 24, 2026</a></blockquote>
+</div>
+
+<div class="entry">
+  <div class="entry-time">6:08pm</div>
+  <h2>Chance!</h2>
+  <p>Another header from Everton as they continue to pile on the pressure, but it loops over.</p>
+  <p>That must be it, surely?</p>
+  <p>We're nearly into the 100th minute.</p>
+</div>
+
+<div class="entry">
+  <div class="entry-time">6:10pm</div>
+  <h2>Seconds left</h2>
+  <p>Spurs are nearly there, but Everton have a corner &mdash; much to de Zerbi's chagrin.</p>
+  <p>Into the 102nd minute here!</p>
+</div>
+
+<div class="entry goal">
+  <div class="entry-time">6:11pm</div>
+  <h2>Spurs survive; West Ham relegated</h2>
+  <p>Full-time! Spurs survive thanks to that Palhinha first-half goal, as de Zerbi runs onto the pitch arms aloft, and players collapse to the floor in relief.</p>
+  <p>The Italian boss is emotional, soaking up the celebrations in the stadium.</p>
+  <p>What a job he's done!</p>
+</div>
+
+<div class="embed-wrap">
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">It’s OVER at the Tottenham Hotspur stadium and Spurs secure their spot in the Premier League next season! <a href="https://t.co/TLnhVYNK0m">pic.twitter.com/TLnhVYNK0m</a></p>&mdash; Sky Sports Premier League (@SkySportsPL) <a href="https://x.com/SkySportsPL/status/2058596589082378660?ref_src=twsrc%5Etfw">May 24, 2026</a></blockquote>
+</div>
+
+<div class="entry">
+  <div class="entry-time">6:12pm</div>
+  <h2>Unhappy Hammers</h2>
+  <p>I imagine the scenes at the London Stadium are slightly more dour than the ones here.</p>
+  <p>That 3-0 win and 39 points were not enough to save the east London side.</p>
+</div>
+
+<div class="embed-wrap">
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Cristian Romero in attendance at the Tottenham Hotspur Stadium! <a href="https://t.co/2JfGciC3pt">pic.twitter.com/2JfGciC3pt</a></p>&mdash; Sky Sports Premier League (@SkySportsPL) <a href="https://x.com/SkySportsPL/status/2058567123165679742?ref_src=twsrc%5Etfw">May 24, 2026</a></blockquote>
+</div>
+
+<div class="entry">
+  <div class="entry-time">6:13pm</div>
+  <h2>Captain(s) Fantastic?</h2>
+  <p>Spurs' captain today, Micky Van de Ven, takes the acclaim of the fans, holding his arms aloft.</p>
+  <p>Cristian Romero &mdash; club captain &mdash; wanders around in his white t-shirt, wondering why he's not in Argentina.</p>
+  <p>James Maddison &mdash; vice captain &mdash; shows the Spurs crest to the crowd, pumping his fist.</p>
+</div>
+
+<div class="entry">
+  <div class="entry-time">6:15pm</div>
+  <h2>Jubilant scenes</h2>
+  <p>The Spurs crowd are delighted, chanting and singing at their players and coach, who soak up the applause on the pitch.</p>
+  <p>Not long ago, most Spurs fans thought they were down.</p>
+  <p>That 3-1 loss to Palace in March.</p>
+  <p>The 3-0 home loss to Forest in April.</p>
+  <p>Then that heartbreaking 2-2 draw with Brighton.</p>
+  <p>But de Zerbi has turned it around and saved this club from utter humiliation.</p>
+  <p>And breathe.</p>
+</div>
+
+<div class="entry goal">
+  <div class="entry-time">6:20pm</div>
+  <h2>Post-match interview: Palhinha</h2>
+</div>
+
+<div class="embed-wrap">
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">&quot;The support from the fans, it&#39;s amazing...I believe the club will grow up after this season&quot; <br><br>Joao Palhinha REACTS as Spurs escape relegation from the Premier League! <a href="https://t.co/jZMXhoKdFR">pic.twitter.com/jZMXhoKdFR</a></p>&mdash; Sky Sports Premier League (@SkySportsPL) <a href="https://x.com/SkySportsPL/status/2058601789700620716?ref_src=twsrc%5Etfw">May 24, 2026</a></blockquote>
+</div>
+
+<div class="entry">
+  <div class="entry-time">6:25pm</div>
+  <h2>Post-match interview: de Zerbi</h2>
+</div>
+
+<div class="embed-wrap">
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">&quot;They deserve EVERYTHING!&quot; <br><br>Roberto De Zerbi says the Spurs fans deserve everything after their strong support this season 🤍 <a href="https://t.co/MxEMyk26vv">pic.twitter.com/MxEMyk26vv</a></p>&mdash; Sky Sports Premier League (@SkySportsPL) <a href="https://x.com/SkySportsPL/status/2058607097831375040?ref_src=twsrc%5Etfw">May 24, 2026</a></blockquote>
+</div>
+
+<div class="entry">
+  <div class="entry-time">6:30pm</div>
+  <h2>Goodbye</h2>
+  <p>That's it for our live blog on Spurs against Everton today.</p>
+  <p>Thanks to a João Palhinha goal in the 41st minute, Tottenham Hotspur saves itself from a first relegation in 49 years.</p>
+  <p>They also relegate London rivals West Ham, despite their 3-0 win over Leeds.</p>
+  <p>De Zerbi, parachuted in after the shocking reigns of Thomas Frank and Igor Tudor, has won 11 points in his 7 games to save this club.</p>
+  <p>They've got to make huge changes in the summer to avoid a third 17th-place finish in a row.</p>
+  <p>Will de Zerbi be allowed to make them by sporting directors Vinai Venkatesham and Johan Lange?</p>
+  <p>I'd expect so.</p>
+  <p>That's all from us. Thanks for joining me.</p>
+  <p>Goodbye!</p>
+</div>
+
+</main>
+
+<footer>
+  &copy; 2026 &middot; Live blog &middot; Premier League final day
+</footer>
+
+<script async src="https://platform.x.com/widgets.js" charset="utf-8"></script>
+</body>
+</html>
