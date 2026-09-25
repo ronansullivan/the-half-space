@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The saga over World Cup ticket prices — The Half Space</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="">
+
+<div id="site-header"></div>
+
+<main>
+  <article>
+    <div class="container">
+      <header class="article-hero fade-up">
+        <div class="eyebrow">Data story</div>
+        <h1>The saga over <em>World Cup ticket prices</em></h1>
+        <p class="deck">FIFA's pricing for the 2026 finals has been one of the tournament's longest-running controversies. The data shows just how far prices have climbed since the 2018 bid book — and since Qatar 2022.</p>
+        <div class="article-meta-bar">
+          <div class="author">
+            <div class="avatar">R</div>
+            <div>
+              <strong>By Ronan</strong>
+              <span>July 2026</span>
+            </div>
+          </div>
+          <div class="actions">
+            <button title="Save">Save</button>
+            <button title="Share">Share</button>
+            <button title="Listen">Listen</button>
+          </div>
+        </div>
+      </header>
+
+      <div class="article-body">
+        <p>Controversies have dogged this year's World Cup: Somalian referee Omar Artan was denied entry to the USA and the Iran national team coach said they had been treated "unfairly" by the USA &mdash; but arguably the longest-running has been the saga over ticket prices.</p>
+
+        <p>When the first batch of tickets were released by FIFA in December, there was widespread outcry.</p>
+
+        <p>For England fans buying through the England Supporters' Travel Club (ESTC), if England had reached Sunday's final, the least they could have paid to attend every match was &pound;5,245 &mdash; the most would be &pound;12,400.</p>
+
+        <p>After these were announced, FIFA introduced 'Supporter Entry Tier' tickets. These cost &pound;45 ($60; &euro;52) and were available through supporters' clubs like ESTC.</p>
+
+        <p>This tier of tickets represents 1.6% of overall tickets allocated.</p>
+
+        <p>In April, on FIFA's own official resale and exchange marketplace, four tickets for the World Cup final were reportedly on sale for almost $3m each (&pound;2.2m; &euro;2.6m).</p>
+
+        <p>Unofficial resale sites &mdash; like StubHub &mdash; have been selling tickets for England vs Argentina on Wednesday (15/7) in the semi-final for &euro;45,000 (&pound;38,170; $51,595).</p>
+
+        <p>FIFA president Gianni Infantino has defended the general prices, citing the cost of college sports in America and resale culture in the US.</p>
+
+        <p>In May, President Trump said he "wouldn't pay it either" &mdash; referring to a $1,000 (&pound;736; &euro;878) ticket to USA's opener against Paraguay in June.</p>
+
+        <p>Data compiled by Statista shows exactly how much tickets at this summer's World Cup have increased both in terms of past tournaments and FIFA and the co-host's proposed prices across the bidding process.</p>
+
+        <figure class="article-chart">
+          <img src="world-cup-tickets-chart-2.png" alt="Bar chart showing Category A World Cup final ticket prices from South Korea &amp; Japan 2002 to USA, Mexico &amp; Canada 2026" style="width:100%;height:auto;display:block;">
+        </figure>
+
+        <p>The above graph shows Category A ticket prices for the final stages of each of the previous six World Cup tournaments. Category A tickets are the most expensive tier of tickets.</p>
+
+        <p>Statista's data &mdash; compiled from the BBC and Coupe du Monde &mdash; shows minimal increases tournament-on-tournament.</p>
+
+        <p>Until 2022 Qatar, no final stage tickets crept above &euro;1000 (&pound;852; $1,138).</p>
+
+        <p>Then, when tickets were released in April for the 2026 World Cup final, the price had increased to $10,990 (&euro;9,654; &pound;8,233).</p>
+
+        <p>That is a five-fold increase from 2022 to 2026.</p>
+
+        <p>Those final tickets released in April already reflected a significant increase on FIFA's pricing from their initial 2018 bid, through to the aforementioned 2026 sale.</p>
+
+        <figure class="article-chart">
+          <img src="world-cup-tickets-chart-1.png" alt="Line chart showing ticket prices for the FIFA World Cup 2026 final by category, from the 2018 bid book phase to the April 2026 sale" style="width:100%;height:auto;display:block;">
+        </figure>
+
+        <p>That Statista data shows a steady increase since the 2018 bid book phase.</p>
+
+        <p>Then, the Category 1 ticket price for the final was $1,550 (&pound;1,161; &euro;1,361) &mdash; similar to the Qatar final stage price of &euro;1,413 ($1,608; &pound;1,204).</p>
+
+        <p>A sharp increase in the October 2025 sale saw Category 1 tickets sell for $6,730 (&euro;5,912; &pound;5,042).</p>
+
+        <p>This rise signalled FIFA and the co-hosts' pricing strategy, which received significant criticism, resulting in the 'Supporter Entry Tier' tickets.</p>
+
+        <p>From there, a 29% increase in December to $8,680 (&euro;7,624; &pound;6,502) was followed by FIFA's final official sale in April 2026.</p>
+
+        <p>The percentage increase was a similar 26.6%, to $10,990 (&euro;9,654; &pound;8,233).</p>
+
+        <p>From 2018 to April 2026, that is a six times increase.</p>
+
+        <p>Both datasets therefore show FIFA are charging fans almost six times as much to attend the final &mdash; in comparison to the most recent World Cup (2022) and their own proposed prices in 2018.</p>
+
+        <p>This may have been reflected in the number of empty seats seen during matches &mdash; including Argentina's quarter-final victory over Switzerland &mdash; despite FIFA's official attendance figures suggesting almost all of the games were at capacity.</p>
+
+        <p>Now, FIFA have released 1,000 extra tickets for the final at $7,380 (&euro;6,484; &pound;5,528).</p>
+
+        <p>$7,380 from $1,550 (the 2018 bid phase price) is still a near four-fold increase and only a 33% decrease from the April 2025 ticket release price.</p>
+
+        <p>When approached for comment, a FIFA spokesperson said:</p>
+
+        <blockquote>&ldquo;At FIFA, we are committed to ensuring fair access to the FIFA World Cup&trade; for both existing and prospective fans and have offered group stage tickets starting from just USD 60 &ndash; an extremely competitive price for a once-in-a-lifetime major global sporting event taking place in North America.</blockquote>
+
+        <p>&ldquo;FIFA&rsquo;s pricing strategy spans a broad range of price points and categories, reflecting market demand for each match. Tickets have been released across sales phases, such as Category 4 at the most accessible price point and 130,000 tickets have been made available priced at USD 60 across the tournament via participating teams, including over 1,000 for the final.</p>
+
+        <p>&ldquo;FIFA&rsquo;s Resale Marketplace provides a safe, transparent and secure environment for fans to sell or transfer tickets to other fans. The applicable resale facilitation fees are aligned with industry standards across North American sports and entertainment sectors.&rdquo;</p>
+
+        <p><em>All exchange rates based on data from Google Finance (13/7/26).</em></p>
+      </div>
+    </div>
+  </article>
+</main>
+
+<div id="site-footer"></div>
+<script src="site.js"></script>
+</body>
+</html>
